@@ -1,0 +1,18 @@
+$foto:  url('../../assets/starfield-banner.jpg');
+
+
+.navbar{
+    background-image:$foto;
+}
+
+
+#logo{
+    width:95%;
+    height:90%;
+    margin: 10px;
+}
+
+.navbar-header{
+    height:124;
+    width:152;
+}

@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/index.jsx",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "bundle_react"),
@@ -23,7 +23,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.m?js?x$/,
         exclude: /(node_modules)/,
         use: {
           loader: "babel-loader",
@@ -33,11 +33,13 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpe?g|gif|mp4|mp3|webp)$/i,
-        loader: "file-loader",
-        options: {
-          outputPath: "assets",
-        },
+        test: /\.(png|jpe?g|gif|mp4|mp3|webp|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename:'[name][ext]',
+          outputPath:'assets/',
+          publicPath:'assets/'
+        }
       },
       {
         test: /\.s[ac]ss$/i,
