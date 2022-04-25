@@ -137,11 +137,137 @@ a{
     padding: 30px 15px;
 }
 
-#main-menu li:nth-of-type(1):before {
+
+
+//Aqui empieza para el bloque de abajo
+
+
+
+#main-menu > li:nth-of-type(1){
+    display: block;
+    width: 100%;
+    ::before{
+        content: none;
+        display: none;
+    }
+}
+
+#main-menu > li:first-child{
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    ::before{
+        content: none;
+        display: none;
+    }
+}
+
+
+#main-menu > li:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    background: #555555;
+    width: 2px;
+    height: 60%;
+}
+
+//Termina aqui el bloque de <li>
+
+//Aqui empieza el bloque para anchor
+#main-menu > li{
+    :nth-child(1) > a {
+    background: #555555;
+    text-decoration: none;
+    color: white;
+    }
+    #topics{
+        display: none;
+    }
+
+}
+
+
+//Bloque para la lista
+#main-menu > li:first-child > ul {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: none;
+    border: none;
+    z-index: 1;
+    font-size: 0;
+    li a{
+        padding: 10px;
+        background: #555;
+        font-size: 14px;
+    }
+}
+
+.dropdown-menu {
+    min-width: calc(100% + 2px);
+}
+
+//Termina bloque de lista
+//Empieza bloque de objetos de lista
+#main-menu > li:first-child > ul li {
+    display: inline-block;
+    position: relative;
+
+
+    ::before{
+        content: "";
+        position: absolute;
+        left: -1px;
+        z-index: 1;
+        top: 20%;
+        display: block;
+        width: 2px;
+        height: 100px;
+        background-color: #888;
+    }
+}
+
+
+
+
+
+
+
+#main-menu > li:first-child > ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#main-menu > li:first-child > ul li:first-child:before {
     content: none;
     display: none;
 }
 
+#main-menu > li:first-child > ul li:before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    z-index: 1;
+    top: 20%;
+    display: block;
+    width: 2px;
+    height: 60%;
+    background-color: #888;
+}
+
+
+
 .dropdown-toggle::after{
     display: none;
 }
+
+
