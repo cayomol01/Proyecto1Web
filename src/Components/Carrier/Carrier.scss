@@ -1,18 +1,144 @@
 $foto:  url('../../assets/starfield-banner.jpg');
 
 
+
 .navbar{
+    
+    width: 100%;
+    padding: 0;
+}
+
+.logo img{
+    width:140px;
+    height: 140px;
+    margin: 11px;
+    vertical-align: middle;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    width:auto;
+    height: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+}
+
+#main_navbar{
+    width: 70%;
     background-image:$foto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10%;
+    padding: 0;
 }
 
 
-#logo{
-    width:95%;
-    height:90%;
-    margin: 10px;
-}
 
 .navbar-header{
-    height:124;
-    width:152;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+.navbar-header::before, .navbar-header::after{
+   content: " ";
+   display: table;
+
+}
+
+.navbar-header::after{
+    clear: both;
+    content: " ";
+    display: table;
+ 
+ }
+ 
+
+
+
+.nav-link{
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #fff;
+}
+
+#main-menu {
+    float: right;
+    margin-right: 1em;
+}
+
+#main-menu > li{
+    display: block;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+.navbar-collpase::before, .nav::before{
+    content: " ";
+    display: table;
+}
+
+.navbar-collpase::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#main-menu > li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    background: #555555;
+    width: 2px;
+    height: 60%;
+}
+
+#main-menu > li .glyphicon {
+    display: none;
+}
+
+
+.glyphicon{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+#main-menu > li > a {
+    color: white;
+    display: block;
+    font-size: 1.25em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.dropdown-toggle::after{
+    display: none;
 }

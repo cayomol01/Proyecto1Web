@@ -11,20 +11,33 @@ export default function Carrier() {
     return (
       <>
        <nav className="navbar sticky-top navbar-expand-lg">
-            <div className="container-fluid" id = "contenedor">
+            <div className="container-fluid" id = "main_navbar">
                 <div className = "navbar-header">
-                    <a className="navbar-brand" href="#"><img id = 'logo' src = {Nasa}/></a>
+                    <a className="logo" href="#"><img  src = {Nasa}/></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
                 </div>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav"> 
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                    <ul>
+
+                    </ul>
+                    <ul className="nav navbar-nav" id = "main-menu"> 
+                        <li className="dropdown">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
+                                <span>
+                                    Missions
+                                </span>
+                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
+                            </a>
+                            <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
+                                </li>
+                            </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
+                            <a className="nav-link" href="#">Follow NASA</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Pricing</a>
