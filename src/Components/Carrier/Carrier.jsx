@@ -36,16 +36,86 @@ export default function Carrier() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Follow NASA</a>
+                        <li className="dropdown">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
+                                <span>
+                                    Galleries
+                                </span>
+                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
+                            </a>
+                            <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
+                        <li className="dropdown">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
+                                <span>
+                                    NASA TV
+                                </span>
+                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
+                            </a>
+                            <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled">Disabled</a>
+                        <li className="dropdown">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
+                                <span>
+                                    Follow NASA
+                                </span>
+                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
+                            </a>
+                            <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className="dropdown">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
+                                <span>
+                                    Downloads
+                                </span>
+                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
+                            </a>
+                            <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className="dropdown">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
+                                <span>
+                                    About
+                                </span>
+                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
+                            </a>
+                            <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className="dropdown">
+                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
+                                <span>
+                                    Nasa Audiences
+                                </span>
+                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
+                            </a>
+                            <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
+                    
                 </div>
             </div>
         </nav>
