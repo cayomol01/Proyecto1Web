@@ -84,14 +84,7 @@ ul {
     padding-inline-start: 40px;
 }
 
-li {
-    text-align: -webkit-match-parent;
-}
 
-.navbar-collpase::before, .nav::before{
-    content: " ";
-    display: table;
-}
 
 .navbar-collpase::after{
     clear: both;
@@ -184,16 +177,20 @@ a{
     text-decoration: none;
     color: white;
     }
-    #topics{
-        display: none;
+    a{
+        text-decoration: none;
+        color: white;
     }
 
 }
 
 
+
+
 //Bloque para la lista
 #main-menu > li:first-child > ul {
     position: absolute;
+    transform: translateX(-50%);
     bottom: 0;
     top: auto;
     display: inline-block;
@@ -205,16 +202,14 @@ a{
     border: none;
     z-index: 1;
     font-size: 0;
-    li a{
+    li a{ 
         padding: 10px;
         background: #555;
         font-size: 14px;
     }
 }
 
-.dropdown-menu {
-    min-width: calc(100% + 2px);
-}
+
 
 //Termina bloque de lista
 //Empieza bloque de objetos de lista
@@ -223,7 +218,7 @@ a{
     position: relative;
 
 
-    ::before{
+   /*  ::before{
         content: "";
         position: absolute;
         left: -1px;
@@ -233,7 +228,7 @@ a{
         width: 2px;
         height: 100px;
         background-color: #888;
-    }
+    } */
 }
 
 
@@ -242,17 +237,17 @@ a{
 
 
 
-#main-menu > li:first-child > ul li {
+/* #main-menu > li:first-child > ul li {
     display: inline-block;
     position: relative;
-}
+} */
 
-#main-menu > li:first-child > ul li:first-child:before {
+/* #main-menu > li:first-child > ul li:first-child:before {
     content: none;
     display: none;
-}
+} */
 
-#main-menu > li:first-child > ul li:before {
+/* #main-menu > li:first-child > ul li:before {
     content: "";
     position: absolute;
     left: -1px;
@@ -262,7 +257,7 @@ a{
     width: 2px;
     height: 60%;
     background-color: #888;
-}
+} */
 
 
 

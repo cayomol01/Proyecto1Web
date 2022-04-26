@@ -24,11 +24,31 @@ export default function Carrier() {
                     </ul>
                     <ul className="nav navbar-nav" id = "main-menu"> 
                         <li className="dropdown">
-                            <a href="#" className="dropdown-toggle" data-toggle="dropdown" id = "topics">
-                                <span>Topics</span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
                             <ul className="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
+                                <li>
+                                    <a href="#">Humans in Space</a>
+                                </li>
                                 <li>
                                     <a href="#">Humans in Space</a>
                                 </li>
