@@ -17,8 +17,9 @@ export default function Navbar({size, img,amount,description}) {
 
         <div className = {tamano} style= {{backgroundImage: `url(${img})`}}>
             <a href = "#">
-            <div className="Contenedor2"></div>
-            <div className = "descripcion">{description}</div>
+            <div className="Contenedor2">
+                <div className = "descripcion">{description}</div>
+            </div>
             {brs}
             </a>
         </div>

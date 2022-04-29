@@ -5,6 +5,7 @@
     position: relative;
     margin:10px;
     padding:0;
+    background-size: cover;
     :hover > .descripcion{
         background: rgba(255, 255, 255,1);
 
@@ -40,7 +41,10 @@ a{
     color: black;
     overflow-wrap: break-word;
     position: absolute;
-    padding: 10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     bottom:0;
     :hover {
         background: rgba(255, 255, 255, 1);

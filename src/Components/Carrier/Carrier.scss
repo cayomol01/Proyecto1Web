@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
 
 .container{
 
@@ -6,4 +7,27 @@
     padding: 0;
     margin-left:auto;
     margin-right: auto;
+}
+
+.load{
+    padding: 10px;
+    background: #15418c;
+    color: white;
+    position:relative;
+    border: none;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    cursor: pointer;
+
+}
+
+.load:hover{
+        background: #5d7fb9;
+}
+
+.no-load{
+    display:none;
 }
