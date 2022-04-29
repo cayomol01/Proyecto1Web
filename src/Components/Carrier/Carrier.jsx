@@ -1,158 +1,39 @@
 import React from "react";
 import './Carrier.scss';
-import Nasa from "../../Assets/nasa-logo.svg";
+import Barra from "../NavBar/NavBar.jsx"
+import Carta from "../Card/Card.jsx"
+import Espacio1 from "../../Assets/Espacio1.jpg"
+import Espacio2 from "../../Assets/Espacio2.jpg"
+import Espacio3 from "../../Assets/Espacio3.jpg"
+import Espacio4 from "../../Assets/Espacio4.jpg"
+import Espacio6 from "../../Assets/Espacio6.jpg"
+import Espacio7 from "../../Assets/Espacio7.jpg"
+import Espacio8 from "../../Assets/Espacio8.jpg"
+import Espacio9 from "../../Assets/Espacio9.jpg"
+import Espacio10 from "../../Assets/Espacio10.png"
+import Espacio11 from "../../Assets/Espacio11.jpg"
+
 
 
 
 export default function Carrier() {
+    const fotos = [Espacio1, Espacio2, Espacio3, Espacio4, Espacio6, Espacio7, Espacio8, Espacio9, Espacio10, Espacio11]
+    const descripciones = ["Humans in Space", "Moon to Mars", "Earth", "Space Tech", "Flight", "Solar System and Beyond", "STEM Engagement", "History", "Benefits to You"]
+    const tamanos = ["col col-sm-6","col col-sm-4"]
 
     
   
     return (
       <>
-       <nav className="navbar sticky-top navbar-expand-lg">
-            <div className="container-fluid" id = "main_navbar">
-                <div className = "navbar-header">
-                    <a className="logo" href="#"><img  src = {Nasa}/></a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul>
-
-                    </ul>
-                    <ul className="nav navbar-nav" id = "main-menu"> 
-                        <li className="dropdown">
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humans in Space</a>
-                                </li>
-
-                            </ul>
-
-
-                        </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
-                                <span>
-                                    Missions
-                                </span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
-                                <span>
-                                    Galleries
-                                </span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
-                                <span>
-                                    NASA TV
-                                </span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
-                                <span>
-                                    Follow NASA
-                                </span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
-                                <span>
-                                    Downloads
-                                </span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
-                                <span>
-                                    About
-                                </span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="dropdown">
-                            <a className="dropdown-toggle" data-toggle="dropdown" href = "#">
-                                <span>
-                                    Nasa Audiences
-                                </span>
-                                <span className="glyphicon glyphicon-chevron-down pull-right"></span>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-left">
-                                <li>
-                                    <a href="https://www.nasa.gov/artemis-1">Artemis I</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
-                </div>
+         <Barra />
+         <div className="container">
+            <div className="row">
+                <Carta size={tamanos[0]} img={Espacio1}amount = {20} description="hola que ase"/>
+                
+                <Carta size={tamanos[1]} img={Espacio1} amount = {10} description="ave maría purisima"/>
+                <Carta size={tamanos[1]} img={Espacio1} amount = {10} description="ave maría purisima"/>
             </div>
-        </nav>
+        </div>
       </>
     );
   }
