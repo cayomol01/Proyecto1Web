@@ -1,0 +1,274 @@
+$foto:  url('../../assets/starfield-banner.jpg');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
+
+
+.nav{
+    position:absolute;
+}
+.navbar{
+    
+    width: 100%;
+    padding: 0;
+}
+
+.logo img{
+    width:100px;
+    height: 100px;
+    margin: 11px;
+    vertical-align: middle;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    width:auto;
+    height: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+}
+
+#main_navbar{
+    width: 70%;
+    background-image:$foto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8%;
+    padding: 0;
+}
+
+
+
+.navbar-header{
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+.navbar-header::before, .navbar-header::after{
+   content: " ";
+   display: table;
+
+}
+
+.navbar-header::after{
+    clear: both;
+    content: " ";
+    display: table;
+ 
+ }
+ 
+
+
+
+.nav-link{
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #fff;
+}
+
+#main-menu {
+    float: right;
+    margin-right: 1em;
+}
+
+#main-menu > li{
+    display: block;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+
+.navbar-collpase::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+#main-menu  > li{
+   transform: translateY(-50%);
+   left: 15%;
+   :hover{
+        background:#15418c;
+        z-index: 2;
+   }
+   
+}
+
+#main-menu > li .glyphicon {
+    display: none;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+#main-menu > li > a {
+    color: white;
+    display: block;
+    font-size: 1.3em;
+    padding: 30px 15px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+
+}
+
+
+
+//Aqui empieza para el bloque de abajo
+
+
+
+#main-menu > li:nth-of-type(1){
+    display: block;
+    width: 100%;
+    ::before{
+        content: none;
+        display: none;
+    }
+}
+
+#main-menu > li:first-child{
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    ::before{
+        content: none;
+        display: none;
+    }
+}
+
+
+#main-menu > li:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    background: #555555;
+    width: 2px;
+    height: 60%;
+}
+
+//Termina aqui el bloque de <li>
+
+//Aqui empieza el bloque para anchor
+#main-menu > li{
+    :nth-child(1) > a {
+    background: #555555;
+    text-decoration: none;
+    color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+
+
+
+//Bloque para la lista
+#main-menu > li:first-child > ul {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    top: auto;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: none;
+    border: none;
+    z-index: 1;
+    font-size: 0; 
+    :not(:nth-of-type(1)) :before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10%;
+        background: #9b9b9b;
+        width: 1px;
+        height: 90%;
+    }
+    li a{ 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background: #555; 
+        font-size: 14px;
+    }
+    :hover{
+        background: rgb(143, 143, 143);
+        color: white;
+    }
+}
+
+
+
+//Termina bloque de lista
+//Empieza bloque de objetos de lista
+#main-menu > li:first-child > ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+#main-menu > li > ul{
+    background: #15418c;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+
+#main-menu > li:not(:first-child):hover > ul {
+    position: absolute;
+    display: block;
+    padding: 0;
+    :hover{
+        background: #0b2046
+    }
+    li{
+        border: none;
+        padding:10px;
+        :hover{
+            background: #0b2046;
+            >a{
+                background: #0b2046;
+            }
+        }
+    }
+    a{
+        background: transparent;
+
+    }
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.form-inline{
+    float:right;
+}
