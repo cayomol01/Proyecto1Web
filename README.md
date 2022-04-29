@@ -6,24 +6,18 @@ Para lograr un mejor resultado se utilizó Google Fonts en específico "Titilliu
 
 ## Tecnologías:
 
-#### React
 
-#### Babel
-#### Webpack
-#### EsLint
-#### SCSS
-#### NGINX
+1. **React**
+    - React fue utilizado para cada una de las partes de la página web para que componente de esta pudiera funcionar por si sola. Casi como si fuera una plantilla para     meter en otras páginas.</br>
 
-**1. React**
-    - React fue utilizado para cada una de las partes de la página web para que componente de esta pudiera funcionar por si sola. Casi como si fuera una plantilla para     meter en otras páginas. 
-**3. Babel**
+2. **Babel**
     - Babel fue utillizado para darle cohesión a nuestro código. Es decir que se pueda correr el mismo código hecho en una mayor cantidad de navegadores. 
-**4. Webpack**
+3. **Webpack**
     - Webpack nos sirve para empaquetar nuestro proyecto y hacer que ocupe menos espacio al final. 
-**5. EsLint**
+4. **EsLint**
     - EsLint sirve para darle un formato fijo a nuestro código de tal manera que tenga congruencia y cohesión.
-**6. SCSS**
+5. **SCSS**
     - SCSS sirve como css. Sin embargo, da paso a el uso de variables y demás cosas para poder realizar el estilo con mayor facilidad
-**7. NGINX**
+6. **NGINX**
     - NGINX sirve como un administrador entre nuestros archivos y el servidor.
 
