@@ -3,6 +3,7 @@ import {useState} from "react";
 import './Carrier.scss';
 import Barra from "../NavBar/NavBar.jsx"
 import Carta from "../Card/Card.jsx"
+import Foot from "../Foot/Foot.jsx"
 import Espacio1 from "../../Assets/Espacio1.jpg"
 import Espacio2 from "../../Assets/Espacio2.jpg"
 import Espacio3 from "../../Assets/Espacio3.jpg"
@@ -47,7 +48,7 @@ export default function Carrier() {
         
     }
 
-  
+    
     return (
       <>
          <Barra />
@@ -55,6 +56,7 @@ export default function Carrier() {
             {mostrar}
             <button type = "button" className= {` ${(p_mostradas*2==fotos.length) ? "no-load" : "load"}`} onClick={imprimit}>More Stories</button>
         </div>
+        <Foot />
       </>
     );
   }
